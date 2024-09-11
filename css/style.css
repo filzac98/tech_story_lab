@@ -1,0 +1,13 @@
+/* Footer Styles */
+
+html {
+  margin: 2%;
+}
+ul li {
+  list-style: none;
+}
+
+.footerstyles {
+  background-color: #233249;
+  color: rgb(255, 255, 255);
+}

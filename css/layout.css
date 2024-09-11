@@ -1,0 +1,27 @@
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Tilpas kolonner efter skærmstørrelse */
+  gap: 20px;
+  padding: 20px;
+}
