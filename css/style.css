@@ -1,13 +1,187 @@
-/* Footer Styles */
-
-html {
-  margin: 2%;
-}
-ul li {
-  list-style: none;
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.footerstyles {
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom left, #d8d8d8, #233249);
+  width: 100%;
+}
+
+/* General Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+main {
+  width: 100%;
+}
+
+/* Logo Styling */
+.logo {
+  margin-top: 1%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  height: 140px;
+}
+
+/* Burger Menu Styling */
+.burger-menu {
+  display: none;
+  position: absolute;
+  left: 5%;
+  top: 3%;
+}
+
+.burger-menu .line {
+  width: 25px;
+  height: 3px;
   background-color: #233249;
-  color: rgb(255, 255, 255);
+  margin: 6px 0;
+}
+
+/* Search Container Styling */
+.search-container {
+  position: relative; /* Make it a positioned container for the icon */
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Align the search bar to the far right */
+}
+
+.search-container input {
+  padding: 5px 40px 5px 10px; /* Add padding-right to make space for the icon */
+  border: 2px solid #233249;
+  border-radius: 30px;
+  width: 250px;
+  max-width: 250px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+/* Style for the search icon */
+.search-container i {
+  position: absolute;
+  right: 15px;
+  color: #233249;
+  font-size: 1.2rem;
+}
+
+/* Hero Image Styling */
+.hero {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Ensure the image covers the container while maintaining its aspect ratio */
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align items */
+  max-width: 600px;
+  margin: 0 auto; /* Center the content horizontally */
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: #233249;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Button Styles */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #233249;
+  background-color: transparent;
+  border: 2px solid #233249;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #233249;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    bottom: 87%;
+  }
+
+  .logo img {
+    height: 120px;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .search-container input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Hero Image Styling */
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+
+  /* Ensure content section is responsive */
+  .content {
+    max-width: 100%; /* Make sure the content adjusts to smaller screens */
+    padding: 0 15px; /* Add padding for mobile devices */
+    margin-bottom: 2%;
+  }
 }
