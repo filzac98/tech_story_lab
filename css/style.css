@@ -18,7 +18,7 @@ header {
   align-items: center;
   padding: 30px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #222222;
 }
 .buttonshead {
   display: flex;
@@ -30,9 +30,7 @@ header {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
-  color: #ffffff;
-  background-color: #eb5045;
-  border: 2px solid #ffffff;
+  color: #d5d5d5;
   border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
@@ -40,7 +38,6 @@ header {
 }
 
 .buttonshead a:hover {
-  background-color: #e882a9;
   color: white;
 }
 
@@ -57,7 +54,7 @@ main {
 }
 
 .logo img {
-  height: 160px;
+  height: 40px;
 }
 
 /* By default, show nav-links and hide burger menu on larger screens */
