@@ -44,35 +44,23 @@
         </p>
       </section>
 
-      <section class="kats grid_1-1__">
-        <div class="box">
-          <a href=""
-            ><p>Studios</p>
-            <img src="img/studio.png" alt=""
-          /></a>
-          <!-- <p class="tilgængelige">tilgængelige</p> -->
-        </div>
-        <div class="box">
-          <a href=""
-            ><p>Kamera, lyd & tilbehør</p>
-            <img src="img/kamera.png" alt=""
-          /></a>
-        </div>
-        <div class="box">
-          <a href=""
-            ><p>Avanceret teknologi</p>
-            <img src="img/vr.png" alt=""
-          /></a>
-        </div>
-        <div class="box">
-          <a href=""
-            ><p>Computere og digitale enheder</p>
-            <img src="img/comp.png" alt=""
-          /></a>
-        </div>
+      <!-- Section for dynamically added boxes -->
+      <section class="kats">
+        <!-- Boxes will be added here by JavaScript -->
       </section>
+
+      <!-- Template for boxes -->
+      <template id="boxTemplate">
+        <div class="box">
+          <a href="#">
+            <p class="box-title"></p>
+            <img src="" alt="" class="box-image" />
+          </a>
+        </div>
+      </template>
     </main>
     <footer></footer>
     <script src="js/main.js"></script>
+    <script src="js/fetch.js"></script>
   </body>
 </html>
