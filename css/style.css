@@ -60,19 +60,13 @@ main {
   height: 160px;
 }
 
-/* Burger Menu Styling */
-.burger-menu {
-  display: none;
-  position: absolute;
-  left: 5%;
-  top: 3%;
+/* By default, show nav-links and hide burger menu on larger screens */
+.nav-links {
+  display: flex; /* Visible by default on larger screens */
 }
 
-.burger-menu .line {
-  width: 25px;
-  height: 3px;
-  background-color: #233249;
-  margin: 6px 0;
+.burger-menu {
+  display: none; /* Hidden on larger screens */
 }
 
 /* Search Container Styling */
@@ -210,11 +204,6 @@ main {
   opacity: 0.7;
 }
 
-.box {
-  border-radius: 2px;
-  border-style: dashed;
-}
-
 .kats {
   display: flex;
   flex-direction: column;
@@ -228,9 +217,37 @@ main {
   width: 100%;
 }
 
-.tilgængelige {
-  border-style: solid;
-  border-radius: 15px;
+.box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box a {
+  text-decoration: none;
+  color: #233249;
+}
+
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box p {
+  font-size: 1.2rem;
+  padding: 15px 0;
+  background-color: #eb5045;
+  color: #ffffff;
+  margin: 0;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Mobile Styles */
@@ -252,8 +269,63 @@ main {
     max-width: 100%;
   }
 
+  /* Show burger menu and hide nav-links on mobile */
   .burger-menu {
     display: block;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    cursor: pointer;
+    z-index: 10; /* Ensure the burger menu is on top */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav-links by default on mobile */
+  }
+
+  /* Show burger menu and hide nav-links on mobile */
+  .burger-menu {
+    display: block;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    cursor: pointer;
+    z-index: 10; /* Ensure the burger menu is on top */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav-links by default on mobile */
+  }
+
+  /* Ensure the nav-links appear when burger is active */
+  .burger-menu.active + .nav-links,
+  .nav-links.active {
+    display: flex; /* Show the nav-links */
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px 0;
+    z-index: 1;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    color: #233249;
+    text-align: center;
+  }
+
+  .burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: #233249;
+    margin: 6px 0;
+  }
+
+  .burger-menu.active .line {
+    background-color: #eb5045; /* Change color when active if desired */
   }
 
   .search-container {
@@ -298,15 +370,18 @@ main {
     display: none;
   }
 
-  .kats {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Center align items */
-    max-width: 100px;
-    margin: 0 auto; /* Center the content horizontally */
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 2%;
+  .box {
+    margin: 3%;
+  }
+
+  .box p {
+    font-size: small;
+  }
+
+  .box img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin: 2%;
   }
 }

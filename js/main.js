@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.getElementById("navLinks");
 
   burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    navLinks.classList.toggle("active");
+    burger.classList.toggle("active"); // Toggle active class on burger
+    navLinks.classList.toggle("active"); // Toggle active class on nav-links
   });
 });
