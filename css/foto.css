@@ -1,0 +1,104 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* background: linear-gradient(to bottom left, #d8d8d8, #eb5045); */
+  background-color: #233249;
+  width: 100%;
+}
+
+/* General Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+/*background: linear-gradient(to top, #d8d8d8, #475469);*/
+
+.buttonshead {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttonshead a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #d2d2d2;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonshead a:hover {
+  color: white;
+}
+
+main {
+  width: 100%;
+}
+
+/* Logo Styling */
+.logo {
+  margin-top: 1%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* By default, show nav-links and hide burger menu on larger screens */
+.nav-links {
+  display: flex; /* Visible by default on larger screens */
+}
+
+.burger-menu {
+  display: none; /* Hidden on larger screens */
+}
+
+/* Search Container Styling */
+.search-container {
+  position: relative; /* Make it a positioned container for the icon */
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Align the search bar to the far right */
+}
+
+.search-container input {
+  padding: 5px 40px 5px 10px; /* Add padding-right to make space for the icon */
+  border: 1px solid #ffffff;
+  opacity: 45%;
+  border-radius: 30px;
+  width: 500px;
+  max-width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+/* Style for the search icon */
+.search-container i {
+  position: absolute;
+  right: 15px;
+  color: #343434;
+  font-size: 1.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
