@@ -350,11 +350,8 @@ footer {
   display: inline-block;
 }
 
-<<<<<<< HEAD
-=======
 /* Footer slut */
 
->>>>>>> fiebranch
 /* Kategori siden */
 
 /* Section styling */
@@ -401,7 +398,6 @@ footer {
   margin-bottom: 20px;
 }
 
-<<<<<<< HEAD .box-arrow {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -427,8 +423,6 @@ footer {
 
 /* Footer slut */
 
-=======
->>>>>>> fiebranch
 /* Mobile Styles */
 @media (max-width: 768px) {
   header {
