@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch data from Supabase
   fetch(
-    "https://acejtlhgjvpsfjgpqlxn.supabase.co/rest/v1/TSL?select=*&limit=10",
+    "https://acejtlhgjvpsfjgpqlxn.supabase.co/rest/v1/TSL?select=*&limit=3",
     {
       headers: {
         apikey:
