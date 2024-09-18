@@ -24,7 +24,7 @@ header {
   top: 0;
   z-index: 1000;
 }
-  /*background: linear-gradient(to top, #d8d8d8, #475469);*/
+/*background: linear-gradient(to top, #d8d8d8, #475469);*/
 
 .buttonshead {
   display: flex;
@@ -103,7 +103,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* Content Section */
 .content {
   display: flex;
@@ -114,9 +113,8 @@ html {
   align-items: center; /* Center align items */
   margin: 0 auto; /* Center the content horizontally */
   text-align: center;
-  
+
   background: linear-gradient(to top, #d8d8d8, #ff4a4a);
-  ;
 }
 
 .content h1 {
@@ -160,18 +158,13 @@ html {
 .buttons a:hover {
   border: 0.9px solid #ffe7e7;
   color: #ffffff;
-
-
-
 }
-
-
 
 /* Footer */
 
 footer {
-display: grid;
-padding: 20px;
+  display: grid;
+  padding: 20px;
 
   padding-top: 130px;
   padding-bottom: 260px;
@@ -182,23 +175,20 @@ padding: 20px;
   align-items: center; /* Center align items */
   margin: 0 auto; /* Center the content horizontally */
   text-align: left;
-  
+
   background: linear-gradient(to top, #d8d8d8, #ff4a4a);
-  ;
 }
 
 .om {
   padding-bottom: 70px;
 }
 
-
 .om h2 {
   font-size: 2.3rem;
   font-weight: 200;
   font-family: Arial, Helvetica, sans-serif;
-color: white;
-padding-bottom: 20px;
-
+  color: white;
+  padding-bottom: 20px;
 }
 
 .om img {
@@ -209,11 +199,9 @@ padding-bottom: 20px;
   font-size: 1.2rem;
   font-weight: 300;
   font-family: Arial, Helvetica, sans-serif;
-color: white;
+  color: white;
 }
 
-<<<<<<< HEAD
-=======
 footer {
   position: relative;
   /* Andra stilar för förälder-diven */
@@ -225,11 +213,11 @@ footer {
   left: 60px;
 }
 
-.contact h3, .contact p {
+.contact h3,
+.contact p {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
   font-weight: 300;
-
 }
 
 .contact h2 {
@@ -246,12 +234,7 @@ footer {
   display: inline-block;
 }
 
-
-
 /* Footer slut */
-
-
-
 
 /* Kategori siden */
 
@@ -322,14 +305,12 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
->>>>>>> origin/index
 /* Mobile Styles */
 @media (max-width: 768px) {
   header {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-
   }
 
   .logo {
@@ -344,8 +325,6 @@ footer {
   main {
     max-width: 100%;
   }
-
-
 
   .nav-links {
     display: none;
@@ -367,16 +346,14 @@ footer {
     z-index: 1000; /* Ensure the burger menu is on top */
   }
 
-  
-
   /* Ensure the nav-links appear when burger is active */
   /*.burger-menu.active + .nav-links,
   .nav-links.active {
     display: flex; /* Show the nav-links */
-    /*flex-direction: column;
+  /*flex-direction: column;
     position: absolute;
     top: 80px; /* Adjust as needed */
-   /* left: 0;
+  /* left: 0;
     right: 0;
     background-color: #ffffff;
     padding: 10px 0;
@@ -393,14 +370,14 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(40, 40, 40);  }
+    background-color: rgb(40, 40, 40);
+  }
 
   .nav-links.active .buttonshead a {
     padding: 40px;
     text-align: center;
     width: 100%;
   }
-
 
   .nav-links a {
     padding: 15px;
@@ -429,18 +406,13 @@ footer {
     max-width: 100%;
   }
 
+  .om {
+    padding-bottom: 90px;
+  }
 
-
-.om {
-  padding-bottom: 90px;
-
-    }
-
-    .contact {
-      padding: 5px 15px;
-    
-        }
-
+  .contact {
+    padding: 5px 15px;
+  }
 
   /* Ensure content section is responsive */
   .content {
@@ -457,7 +429,6 @@ footer {
     font-size: medium;
   }
 
-  
   .buttonshead {
     display: none;
   }
