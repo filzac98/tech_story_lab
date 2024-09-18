@@ -18,8 +18,14 @@ header {
   align-items: center;
   padding: 30px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgb(40, 40, 40);
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
+  /*background: linear-gradient(to top, #d8d8d8, #475469);*/
+
 .buttonshead {
   display: flex;
   justify-content: center;
@@ -30,9 +36,7 @@ header {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
-  color: #ffffff;
-  background-color: #eb5045;
-  border: 2px solid #ffffff;
+  color: #d2d2d2;
   border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
@@ -40,7 +44,6 @@ header {
 }
 
 .buttonshead a:hover {
-  background-color: #e882a9;
   color: white;
 }
 
@@ -57,7 +60,7 @@ main {
 }
 
 .logo img {
-  height: 160px;
+  height: 40px;
 }
 
 /* By default, show nav-links and hide burger menu on larger screens */
@@ -79,10 +82,11 @@ main {
 
 .search-container input {
   padding: 5px 40px 5px 10px; /* Add padding-right to make space for the icon */
-  border: 2px solid #233249;
+  border: 1px solid #ffffff;
+  opacity: 45%;
   border-radius: 30px;
-  width: 250px;
-  max-width: 250px;
+  width: 500px;
+  max-width: 300px;
   height: 40px;
   box-sizing: border-box;
 }
@@ -91,26 +95,188 @@ main {
 .search-container i {
   position: absolute;
   right: 15px;
-  color: #233249;
+  color: #343434;
   font-size: 1.2rem;
 }
 
-/* Hero Image Styling */
-.hero {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
-.hero img {
-  width: 100%;
-  height: 75vh;
-  display: block;
-  object-fit: cover; /* Ensure the image covers the container while maintaining its aspect ratio */
-}
 
 /* Content Section */
 .content {
+  display: flex;
+  padding-top: 270px;
+  padding-bottom: 260px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align items */
+  margin: 0 auto; /* Center the content horizontally */
+  text-align: center;
+  
+  background: linear-gradient(to top, #d8d8d8, #ff4a4a);
+  ;
+}
+
+.content h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  max-width: 65ch;
+}
+
+/* Button Styles */
+/* Button Styles (now applied to a tags) */
+.buttons {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #ffeded;
+  border: 0.9px solid #ffcece;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons a:hover {
+  border: 0.9px solid #ffe7e7;
+  color: #ffffff;
+
+
+
+}
+
+
+
+/* Footer */
+
+footer {
+display: grid;
+padding: 20px;
+
+  padding-top: 130px;
+  padding-bottom: 260px;
+  padding-left: 60px;
+
+  flex-direction: column;
+  justify-content: left;
+  align-items: center; /* Center align items */
+  margin: 0 auto; /* Center the content horizontally */
+  text-align: left;
+  
+  background: linear-gradient(to top, #d8d8d8, #ff4a4a);
+  ;
+}
+
+.om {
+  padding-bottom: 70px;
+}
+
+
+.om h2 {
+  font-size: 2.3rem;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+color: white;
+padding-bottom: 20px;
+
+}
+
+.om img {
+  max-width: 300px;
+}
+
+.om p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+<<<<<<< HEAD
+=======
+footer {
+  position: relative;
+  /* Andra stilar för förälder-diven */
+}
+
+.contact {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+
+.contact h3, .contact p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+
+}
+
+.contact h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.border {
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+
+
+/* Footer slut */
+
+
+
+
+/* Kategori siden */
+
+.kategorihead {
+  margin-top: 3%;
+  text-align: center;
+  color: #fff;
+}
+
+.katbody {
+  background: linear-gradient(to top, #d8d8d8, #233249);
+  background-repeat: no-repeat;
+}
+
+.katbody p {
+  color: black;
+  opacity: 0.7;
+}
+
+.katbody h1 {
+  color: black;
+  opacity: 0.7;
+}
+
+.kats {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,143 +286,137 @@ main {
   text-align: center;
   margin-bottom: 2%;
   margin-top: 2%;
+  width: 100%;
 }
 
-.content h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-bottom: 30px;
-}
-
-/* Button Styles */
-/* Button Styles (now applied to a tags) */
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.buttons a {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #ffffff;
-  background-color: #eb5045;
-  border: 2px solid #ffffff;
-  border-radius: 50px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.buttons a:hover {
-  background-color: #e882a9;
-  color: white;
-}
-
-/* Opening Hours style */
-.open {
-  background-color: #e882a9;
-  padding: 20px;
-  margin: 30px auto;
-  text-align: center;
+.box {
+  background-color: #ffffff;
   border-radius: 10px;
-  color: #fff;
-  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.open h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+.box a {
+  text-decoration: none;
+  color: #233249;
 }
 
-.open p {
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box p {
   font-size: 1.2rem;
-  margin-bottom: 5px;
+  padding: 15px 0;
+  background-color: #eb5045;
+  color: #ffffff;
+  margin: 0;
 }
 
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+>>>>>>> origin/index
 /* Mobile Styles */
 @media (max-width: 768px) {
   header {
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+
   }
 
   .logo {
-    bottom: 87%;
+    bottom: 50%;
   }
 
   .logo img {
-    height: 120px;
+    height: 60px;
+    padding-bottom: 20px;
   }
 
   main {
     max-width: 100%;
   }
 
+
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%; /* Placera menyn direkt under headern */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* eller annan önskad färg */
+    z-index: 1000;
+  }
+
   /* Show burger menu and hide nav-links on mobile */
   .burger-menu {
     display: block;
     position: absolute;
     left: 5%;
-    top: 3%;
+    top: 11%;
     cursor: pointer;
-    z-index: 10; /* Ensure the burger menu is on top */
+    z-index: 1000; /* Ensure the burger menu is on top */
   }
 
-  .nav-links {
-    display: none; /* Hide nav-links by default on mobile */
-  }
-
-  /* Show burger menu and hide nav-links on mobile */
-  .burger-menu {
-    display: block;
-    position: absolute;
-    left: 5%;
-    top: 3%;
-    cursor: pointer;
-    z-index: 10; /* Ensure the burger menu is on top */
-  }
-
-  .nav-links {
-    display: none; /* Hide nav-links by default on mobile */
-  }
+  
 
   /* Ensure the nav-links appear when burger is active */
-  .burger-menu.active + .nav-links,
+  /*.burger-menu.active + .nav-links,
   .nav-links.active {
     display: flex; /* Show the nav-links */
-    flex-direction: column;
+    /*flex-direction: column;
     position: absolute;
     top: 80px; /* Adjust as needed */
-    left: 0;
+   /* left: 0;
     right: 0;
     background-color: #ffffff;
     padding: 10px 0;
-    z-index: 1;
+    z-index: 10000;
+  }*/
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .nav-links.active .buttonshead {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(40, 40, 40);  }
+
+  .nav-links.active .buttonshead a {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
 
   .nav-links a {
     padding: 15px;
-    color: #233249;
+    color: #d5d5d5;
     text-align: center;
   }
 
   .burger-menu .line {
     width: 25px;
-    height: 3px;
-    background-color: #233249;
+    height: 1.5px;
+    background-color: #d4d4d4;
     margin: 6px 0;
   }
 
   .burger-menu.active .line {
-    background-color: #eb5045; /* Change color when active if desired */
+    background-color: #ffffff; /* Change color when active if desired */
   }
 
   .search-container {
@@ -269,19 +429,24 @@ main {
     max-width: 100%;
   }
 
-  /* Hero Image Styling */
-  .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* Ensures the image covers the container */
-  }
+
+
+.om {
+  padding-bottom: 90px;
+
+    }
+
+    .contact {
+      padding: 5px 15px;
+    
+        }
+
 
   /* Ensure content section is responsive */
   .content {
     max-width: 100%; /* Make sure the content adjusts to smaller screens */
-    padding: 0 15px; /* Add padding for mobile devices */
-    margin-bottom: 2%;
+    padding: 100px 100px; /* Add padding for mobile devices */
+    padding-top: 260px;
   }
 
   .content h1 {
@@ -292,11 +457,7 @@ main {
     font-size: medium;
   }
 
-  /* Responsive Open Section */
-  .open {
-    max-width: 90%;
-    padding: 20px;
-  }
+  
   .buttonshead {
     display: none;
   }

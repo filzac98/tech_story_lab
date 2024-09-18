@@ -9,23 +9,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css">
   </head>
   <body>
+
+        <!-- MENY -->
+
     <header>
       <div class="nav-links" id="navLinks">
         <div class="buttonshead">
-          <a href="kategorier.html">Lej Udstyr</a>
-          <a href="om-os.html">Om Os</a>
+          <a href="kategorier.html">Lej udstyr</a>
+          <a href="#om-os">Om os</a>
         </div>
       </div>
-      <div class="burger-menu">
+      <div class="burger-menu" id="burger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
       </div>
       <div class="logo">
         <a href="index.html">
-          <img src="img/Logo.png" alt="Tech & Story Lab Logo"
+          <img src="img/newlogo.svg" alt="Tech & Story Lab Logo"
         /></a>
       </div>
       <div class="search-container">
@@ -35,38 +39,66 @@
       </div>
     </header>
 
+ <!-- MENY SLUT-->
+
+
     <main>
-      <section class="hero">
-        <img src="img/DSCF4748.JPG" alt="heroimage" />
-      </section>
 
       <section class="content">
-        <h1>Tech & Story Lab</h1>
+        <h1>Borrow. Perform. Repeat.</h1>
         <p>
-          Her hos os kan du leje nyt teknologisk udstyr til alle dine små og
-          store projekter. Kig ind og sig hej, så hjælper vi dig!
+          Hos oss kan du låne nya teknologiske udstyr til alle dine små og store projekter. Kig ind og sig hej så hjælper vi dig!
         </p>
         <div class="buttons">
-          <a href="kategorier.html">Lej Udstyr</a>
-          <a href="om-os.html">Om Os</a>
+          <a href="kategorier.html">Lån</a>
+          <a href="#om-os">Find & åbenttider</a>
         </div>
       </section>
 
-      <section class="open">
-        <h2>Åbningstider:</h2>
-        <p>9-16 Man-Tor</p>
-        <p>9-15 Fre</p>
+ <!-- KATEGORIER-->
 
-        <h2>Adresse:</h2>
-        <p>Guldbergsgade 29N, 2200 KBH N</p>
 
-        <h2>Kontakt:</h2>
-        <p>Email: techandstorylab@kea.dk</p>
 
-        <p><strong>Husk studiekort!</strong></p>
-      </section>
+    
     </main>
-    <footer></footer>
+    <footer id="om-os">
+
+      <div class="om grid-1-1">
+        <div>
+      <h2>Om Tech & Story Lab</h2>
+      <p>Tech & Story Lab er et lab med fokus på ny teknologi for KEAs studerende, undervisere og øvrige ansatte. </p>
+    </div>
+    <div>
+      <img src="img/introvideo.png" alt="introvideo">
+    </div>
+    </div>
+
+      <div class="contact">
+        
+      <h2>Find hit & åbentider</h2>
+      <div class="grid-2_2">
+      <div>
+        <h3>Mån-Tor</h3>
+        <p class="border">9-16</p>
+      </div>
+      <div>
+        <h3>Fre</h3>
+        <p class="border">9-15</p>
+      </div>
+
+      <div>
+        <h3>Adresse</h3>
+        <p class="border">Guldbergsgade 29N, 2200 KBH N</p>
+      </div>
+<div>
+        <h3>Kontakt</h3>
+        <p class="border">techandstorylab@kea.dk</p>
+      </div>
+    </div>
+      </div>
+    </footer>
+
+
     <script src="js/main.js"></script>
   </body>
 </html>
