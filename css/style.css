@@ -588,3 +588,53 @@ footer {
   border: 0.9px solid #d8d8d8;
   color: #ffffff;
 }
+
+/* Styling for the form section */
+.form-section {
+  margin-top: 2%;
+  background-color: #ffffff72;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h3 {
+  margin-top: 0;
+  color: #ffffff; /* Heading color to match content */
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #d2d2d2; /* Light color for consistency */
+}
+
+.form-section input[type="text"],
+.form-section input[type="date"] {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #d2d2d2; /* Light border color */
+  border-radius: 4px;
+  background-color: #333; /* Match form's background with content area */
+  color: #d2d2d2; /* Text color to match content */
+}
+
+.form-section button {
+  padding: 10px 15px;
+  background-color: #ff4a4ae2; /* Match button color with theme */
+  color: #ffffff;
+  border: none;
+  border-radius: 50px; /* Rounded button edges */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+  background-color: #d43f3a; /* Darker shade on hover */
+}

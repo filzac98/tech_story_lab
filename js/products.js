@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Get category name from URL
   const category = document.querySelector("main h1").textContent;
 
-  const fetchProducts = async (category, limit = 100) => {
+  const fetchProducts = async (category, limit = 50) => {
     try {
       const response = await fetch(
         `https://acejtlhgjvpsfjgpqlxn.supabase.co/rest/v1/TSL?select=*&category=eq.${encodeURIComponent(
