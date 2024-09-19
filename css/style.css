@@ -166,359 +166,33 @@ html {
 .contentv {
   display: flex;
   padding-top: 230px;
-  padding-bottom: 260px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* Center align items */
-  margin: 0 auto; /* Center the content horizontally */
-  text-align: center;
-  background: linear-gradient(to top, #d8d8d8, #233249);
-  padding: 230px 350px 260px 350px;
-}
-
-.contentf h1,
-.contents h1,
-.contentc h1,
-.contentv h1 {
-  color: white;
-  font-size: 3rem;
-  margin-bottom: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-}
-
-.contentf p,
-.contentc p,
-.contents p,
-.contentv p {
-  font-size: 1rem;
-  color: #ffffff;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  line-height: 1.5rem;
-}
-
-/* Button Styles */
-.button {
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.button a {
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 1rem;
-  color: #d8d8d8;
-  border: 0.9px solid #d8d8d8;
-  border-radius: 50px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.button a:hover {
-  border: 0.9px solid #d8d8d8;
-  color: #ffffff;
-}
-
-/* Footer */
-footer {
-  display: grid;
-  padding: 20px;
-
-  padding-top: 130px;
-  padding-bottom: 260px;
-  padding-left: 60px;
-
-  flex-direction: column;
-  justify-content: left;
-  align-items: center; /* Center align items */
-  margin: 0 auto; /* Center the content horizontally */
-  text-align: left;
-
-  background: linear-gradient(to top, #d8d8d8, #ff4a4a);
-}
-
-.om {
-  padding-bottom: 70px;
-}
-
-.om h2 {
-  font-size: 2.3rem;
-  font-weight: 200;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  padding-bottom: 20px;
-}
-
-.om img {
-  max-width: 300px;
-}
-
-.om p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-footer {
-  position: relative;
-  /* Andra stilar för förälder-diven */
-}
-
-.contact {
-  position: absolute;
-  bottom: 60px;
-  left: 60px;
-}
-
-.contact h3,
-.contact p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 300;
-}
-
-.contact h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 300;
-  padding-bottom: 40px;
-}
-
-.border {
-  border: 1px solid rgb(0, 0, 0, 0.2);
-  padding: 12px;
-  border-radius: 50px;
-  display: inline-block;
-}
-/* Footer slut */
-
-/* Kategori siden */
-.kategorihead {
-  margin-top: 3%;
-  text-align: center;
-  color: #fff;
-}
-
-.katbody {
-  background: linear-gradient(to top, #d8d8d8, #233249);
-  background-repeat: no-repeat;
-}
-
-.katbody p {
-  color: black;
-  opacity: 0.7;
-}
-
-.katbody h1 {
-  color: black;
-  opacity: 0.7;
-}
-
-.kats {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* Center align items */
-  max-width: 600px;
-  margin: 0 auto; /* Center the content horizontally */
-  text-align: center;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  width: 100%;
-}
-
-.box {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.box a {
-  text-decoration: none;
-  color: #233249;
-}
-
-.box img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.box p {
-  font-size: 1.2rem;
-  padding: 15px 0;
-  background-color: #eb5045;
-  color: #ffffff;
-  margin: 0;
-}
-
-.box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  header {
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  .logo {
-    bottom: 50%;
-  }
-
-  .logo img {
-    height: 60px;
-    padding-bottom: 20px;
-  }
-
-  main {
-    max-width: 100%;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%; /* Placera menyn direkt under headern */
-    left: 0;
-    width: 100%;
-    background-color: #ffffff; /* eller annan önskad färg */
-    z-index: 1000;
-  }
-
-  /* Show burger menu and hide nav-links on mobile */
-  .burger-menu {
-    display: block;
-    position: absolute;
-    left: 5%;
-    top: 11%;
-    cursor: pointer;
-    z-index: 1000; /* Ensure the burger menu is on top */
-  }
-
-  /* Ensure the nav-links appear when burger is active */
-  /*.burger-menu.active + .nav-links,
-  .nav-links.active {
-    display: flex; /* Show the nav-links */
-  /*flex-direction: column;
-    position: absolute;
-    top: 80px; /* Adjust as needed */
-  /* left: 0;
-    right: 0;
-    background-color: #ffffff;
-    padding: 10px 0;
-    z-index: 10000;
-  }*/
-
-  .nav-links.active {
+  /* Studio */
+  .studio {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links.active .buttonshead {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgb(40, 40, 40);
-  }
-
-  .nav-links.active .buttonshead a {
-    padding: 40px;
-    text-align: center;
-    width: 100%;
-  }
-
-  .nav-links a {
-    padding: 15px;
-    color: #d5d5d5;
-    text-align: center;
-  }
-
-  .burger-menu .line {
-    width: 25px;
-    height: 1.5px;
-    background-color: #d4d4d4;
-    margin: 6px 0;
-  }
-
-  .burger-menu.active .line {
-    background-color: #ffffff; /* Change color when active if desired */
-  }
-
-  .search-container {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-  .search-container input {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .om {
-    padding-bottom: 90px;
-  }
-
-  .contact {
-    padding: 5px 15px;
-  }
-
-  /* Ensure content section is responsive */
-  .content {
-    max-width: 100%; /* Make sure the content adjusts to smaller screens */
-    padding: 100px 100px; /* Add padding for mobile devices */
-    padding-top: 260px;
-  }
-
-  .content h1 {
-    font-size: xx-large;
-  }
-
-  .content p {
-    font-size: medium;
-  }
-
-  .buttonshead {
-    display: none;
-  }
-
-  /* Foto, comp, strom, og vr side */
-  .contentf,
-  .contentc,
-  .contents,
-  .contentv {
-    display: flex;
-    padding-top: 230px;
+    padding-top: 270px;
     padding-bottom: 260px;
     flex-direction: column;
     justify-content: center;
     align-items: center; /* Center align items */
     margin: 0 auto; /* Center the content horizontally */
     text-align: center;
-    max-width: 65ch;
     background: linear-gradient(to top, #d8d8d8, #233249);
-    padding: 230px 20px 260px 20px;
+    padding: 230px 350px 260px 350px;
   }
 
   .contentf h1,
-  .contentc h1,
   .contents h1,
+  .contentc h1,
   .contentv h1 {
+    color: white;
+    font-size: 3rem;
+
+    background: linear-gradient(to top, #d8d8d8, #233249);
+  }
+
+  .studio h1 {
     font-size: 2rem;
-    color: #ffffff;
+    color: #ffffffc8;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -534,7 +208,103 @@ footer {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
+    line-height: 1.5rem;
   }
+  .studio p {
+    font-size: 1rem;
+    color: #ffffffbd;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    max-width: 65ch;
+  }
+
+  /* Studio Cards */
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+  }
+
+  .card {
+    background-color: rgba(255, 255, 255, 0.677);
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Set a fixed width for the cards */
+  }
+
+  .card img {
+    width: 100%; /* Make the image fit the card width */
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and crop overflow */
+    border-radius: 10px;
+  }
+
+  .card h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333333d0;
+  }
+
+  /* Button hover effect */
+  .card-link:hover {
+    background-color: #ffb3b3;
+  }
+
+  /* Card buttons container */
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .card-link,
+  .arrow-link {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #000000cd;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .card-link:hover,
+  .arrow-link:hover {
+    background-color: #ffb3b3;
+  }
+
+  /* Arrow button styles */
+  .arrow-link {
+    padding: 10px;
+    font-size: 1.5rem; /* Adjust arrow size */
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #000000a4; /* Background color matching with main button */
+    color: white; /* White arrow icon */
+    transition: background-color 0.3s ease;
+  }
+
+  /* Add hover effect for the arrow button */
+  .arrow-link:hover {
+    background-color: #ffb3b3;
+  }
+
+  /* Footer */
 
   /* Button Styles */
   .button {
@@ -584,7 +354,7 @@ footer {
   }
 
   .om h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 200;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -596,7 +366,7 @@ footer {
   }
 
   .om p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -625,7 +395,6 @@ footer {
     color: rgb(0, 0, 0);
     font-weight: 300;
     padding-bottom: 40px;
-    margin-top: 20px;
   }
 
   .border {
@@ -633,5 +402,353 @@ footer {
     padding: 12px;
     border-radius: 50px;
     display: inline-block;
+  }
+  /* Footer slut */
+
+  /* Kategori siden */
+  .kategorihead {
+    margin-top: 3%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .katbody {
+    background: linear-gradient(to top, #d8d8d8, #233249);
+    background-repeat: no-repeat;
+  }
+
+  .katbody p {
+    color: black;
+    opacity: 0.7;
+  }
+
+  .katbody h1 {
+    color: black;
+    opacity: 0.7;
+  }
+
+  .kats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align items */
+    max-width: 600px;
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  .box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .box a {
+    text-decoration: none;
+    color: #233249;
+  }
+
+  .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .box p {
+    font-size: 1.2rem;
+    padding: 15px 0;
+    background-color: #eb5045;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    header {
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      bottom: 50%;
+    }
+
+    .logo img {
+      height: 60px;
+      padding-bottom: 20px;
+    }
+
+    main {
+      max-width: 100%;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%; /* Placera menyn direkt under headern */
+      left: 0;
+      width: 100%;
+      background-color: #ffffff; /* eller annan önskad färg */
+      z-index: 1000;
+    }
+
+    /* Show burger menu and hide nav-links on mobile */
+    .burger-menu {
+      display: block;
+      position: absolute;
+      left: 5%;
+      top: 11%;
+      cursor: pointer;
+      z-index: 1000; /* Ensure the burger menu is on top */
+    }
+
+    /* Ensure the nav-links appear when burger is active */
+    /*.burger-menu.active + .nav-links,
+  .nav-links.active {
+    display: flex; /* Show the nav-links */
+    /*flex-direction: column;
+    position: absolute;
+    top: 80px; /* Adjust as needed */
+    /* left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px 0;
+    z-index: 10000;
+  }*/
+
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-links.active .buttonshead {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgb(40, 40, 40);
+    }
+
+    .nav-links.active .buttonshead a {
+      padding: 40px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .nav-links a {
+      padding: 15px;
+      color: #d5d5d5;
+      text-align: center;
+    }
+
+    .burger-menu .line {
+      width: 25px;
+      height: 1.5px;
+      background-color: #d4d4d4;
+      margin: 6px 0;
+    }
+
+    .burger-menu.active .line {
+      background-color: #ffffff; /* Change color when active if desired */
+    }
+
+    .search-container {
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .search-container input {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .om {
+      padding-bottom: 90px;
+    }
+
+    .contact {
+      padding: 5px 15px;
+    }
+
+    /* Ensure content section is responsive */
+    .content {
+      max-width: 100%; /* Make sure the content adjusts to smaller screens */
+      padding: 100px 100px; /* Add padding for mobile devices */
+      padding-top: 260px;
+    }
+
+    .content h1 {
+      font-size: xx-large;
+    }
+
+    .content p {
+      font-size: medium;
+    }
+
+    .buttonshead {
+      display: none;
+    }
+
+    /* Foto, comp, strom, og vr side */
+    .contentf,
+    .contentc,
+    .contents,
+    .contentv {
+      display: flex;
+      padding-top: 230px;
+      padding-bottom: 260px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Center align items */
+      margin: 0 auto; /* Center the content horizontally */
+      text-align: center;
+      max-width: 65ch;
+      background: linear-gradient(to top, #d8d8d8, #233249);
+      padding: 230px 20px 260px 20px;
+    }
+
+    .contentf h1,
+    .contentc h1,
+    .contents h1,
+    .contentv h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+    }
+
+    .contentf p,
+    .contentc p,
+    .contents p,
+    .contentv p {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+    }
+
+    /* Button Styles */
+    .button {
+      padding-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .button a {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 1rem;
+      color: #d8d8d8;
+      border: 0.9px solid #d8d8d8;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .button a:hover {
+      border: 0.9px solid #d8d8d8;
+      color: #ffffff;
+    }
+
+    /* Footer */
+    footer {
+      display: grid;
+      padding: 20px;
+
+      padding-top: 130px;
+      padding-bottom: 260px;
+      padding-left: 60px;
+
+      flex-direction: column;
+      justify-content: left;
+      align-items: center; /* Center align items */
+      margin: 0 auto; /* Center the content horizontally */
+      text-align: left;
+
+      background: linear-gradient(to top, #d8d8d8, #ff4a4a);
+    }
+
+    .om {
+      padding-bottom: 70px;
+    }
+
+    .om h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      padding-bottom: 20px;
+    }
+
+    .om img {
+      max-width: 300px;
+    }
+
+    .om p {
+      font-size: 1rem;
+      font-weight: 300;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+
+    footer {
+      position: relative;
+      /* Andra stilar för förälder-diven */
+    }
+
+    .contact {
+      position: absolute;
+      bottom: 60px;
+      left: 60px;
+    }
+
+    .contact h3,
+    .contact p {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(0, 0, 0);
+      font-weight: 300;
+    }
+
+    .contact h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(0, 0, 0);
+      font-weight: 300;
+      padding-bottom: 40px;
+      margin-top: 20px;
+    }
+
+    .border {
+      border: 1px solid rgb(0, 0, 0, 0.2);
+      padding: 12px;
+      border-radius: 50px;
+      display: inline-block;
+    }
+    /* studio */
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
   }
 }
