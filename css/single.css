@@ -1,0 +1,113 @@
+img {
+  max-width: 100%;
+  border-radius: 36px;
+}
+
+.single {
+  padding-top: 180px;
+  background: linear-gradient(to top, #657489, #f2f2f2);
+}
+
+.singletop {
+  text-align: center;
+}
+
+.singletop h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.singletop p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  opacity: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.bildogspec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px;
+  text-align: center;
+}
+
+.spec h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding-bottom: 30px;
+}
+
+.spec h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  padding-top: 24px;
+  font-size: 1rem;
+}
+
+.spec p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  opacity: 70%;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 130px;
+}
+
+.helptext {
+  max-width: 60ch;
+  text-align: center;
+}
+
+.helptext h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  padding-bottom: 25px;
+}
+
+.helptext p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+/* Styles for the green light */
+.green-light::before {
+  content: ""; /* This will create the light */
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #28a745; /* Green color */
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 10px; /* Add some space between the light and the text */
+  vertical-align: middle; /* Align it vertically with the text */
+}
+
+@media (max-width: 768px) {
+  .bildogspec {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    padding-bottom: 30px;
+  }
+
+  .single {
+    padding-top: 200px;
+    padding-bottom: 20px;
+  }
+
+  .helptext {
+    max-width: 40ch;
+  }
+}
