@@ -39,7 +39,7 @@
 
     <main>
       <!-- KATEGORIER -->
-      <section class="kategorihead">
+      <section class="studio">
         <h1>Lej Udstyr</h1>
         <p>
           Vi har over 1,400 produkter. Se hvilke som findes tilgængelige idag
@@ -48,19 +48,20 @@
       </section>
 
       <!-- Section for dynamically added boxes -->
-      <section class="kats grid_1-1-1">
+      <section class="category">
         <!-- Boxes will be added here by JavaScript -->
+        <div class="cards-container grid_1-1-1"></div>
       </section>
 
       <!-- Template for boxes -->
       <template id="boxTemplate">
-        <div class="box">
-          <a href="#">
-            <p class="box-title"></p>
-            <img src="" alt="" class="box-image" />
-            <p class="product-count"></p>
-            <button class="box-arrow">→</button>
-          </a>
+        <div class="card">
+          <h3 class="box-title"></h3>
+          <img src="" alt="" class="card-image" />
+          <div class="cat-buttons">
+            <a href="#" class="card-link green-light"></a>
+            <a href="#" class="arrow-link">→</a>
+          </div>
         </div>
       </template>
     </main>

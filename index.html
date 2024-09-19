@@ -53,90 +53,28 @@
         </div>
       </section>
 
+      <!-- Section for dynamically added boxes -->
       <section class="category" id="lej-udstyr">
         <h1>Lej Udstyr</h1>
         <p>
           Vi har over 1,400 produkter. Se hvilke er tilgænglige i dag under
           kategorierne.
         </p>
+        <!-- Boxes will be added here by JavaScript -->
+        <div class="cards-container grid_1-1-1"></div>
+      </section>
 
-        <!-- Add a container for the cards -->
-        <div class="cards-container grid_1-1-1">
-          <!-- First Card -->
-          <div class="card">
-            <h3>Studios</h3>
-            <img
-              src="img/studio.webp"
-              alt="Foto & video studio"
-              class="card-image"
-            />
-            <div class="cat-buttons">
-              <a href="studio.html" class="card-link green-light"
-                >3 produkter tilgængelige</a
-              >
-              <a href="studio.html" class="arrow-link">→</a>
-            </div>
-          </div>
-
-          <!-- Second Card -->
-          <div class="card">
-            <h3>Foto, Lyd & Video</h3>
-            <img
-              src="img/kamera.webp"
-              alt="Podcast studio"
-              class="card-image"
-            />
-            <div class="cat-buttons">
-              <a href="foto.html" class="card-link green-light"
-                >138 produkter tilgængelige</a
-              >
-              <a href="foto.html" class="arrow-link">→</a>
-            </div>
-          </div>
-          <!-- Third Card -->
-          <div class="card">
-            <h3>Computere og Enheder</h3>
-            <img src="img/comp.webp" alt="Podcast studio" class="card-image" />
-            <div class="cat-buttons">
-              <a href="comp.html" class="card-link green-light"
-                >189 produkter tilgængelige</a
-              >
-              <a href="comp.html" class="arrow-link">→</a>
-            </div>
-          </div>
-          <!-- Fourth Card -->
-          <div class="card">
-            <h3>Avanceret Teknologi</h3>
-            <img
-              src="img/vr.2webp.webp"
-              alt="Podcast studio"
-              class="card-image"
-            />
-            <div class="cat-buttons">
-              <a href="vr.html" class="card-link green-light"
-                >57 produkter tilgængelige</a
-              >
-              <a href="vr.html" class="arrow-link">→</a>
-            </div>
-          </div>
-
-          <!-- Fifth Card -->
-          <div class="card">
-            <h3>Strøm Forsyning og kabler</h3>
-            <img
-              src="img/strøm.webp"
-              alt="Eye-tracking studio"
-              class="card-image"
-            />
-            <div class="cat-buttons">
-              <a href="strom.html" class="card-link green-light"
-                >60 produkter tilgængelige</a
-              >
-              <a href="strom.html" class="arrow-link">→</a>
-            </div>
+      <!-- Template for boxes -->
+      <template id="boxTemplate">
+        <div class="card">
+          <h3 class="box-title"></h3>
+          <img src="" alt="" class="card-image" />
+          <div class="cat-buttons">
+            <div class="card-link green-light"></div>
+            <a href="#" class="arrow-link">→</a>
           </div>
         </div>
-      </section>
+      </template>
     </main>
     <footer id="om-os">
       <div class="om grid-1-1">
