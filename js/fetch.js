@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const clone = template.cloneNode(true);
 
     // Update title and image based on fetched data
-    clone.querySelector(".box-title").textContent = data["product-name"]; // Match your data field for product names
+    clone.querySelector(".box-title").textContent = data["category"]; // Match your data field for product names
     clone.querySelector(".box-image").src = `img/${data["img-name"]}`; // Assuming your images are stored locally
     clone.querySelector(
       ".product-count"
