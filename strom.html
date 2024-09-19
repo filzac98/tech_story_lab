@@ -41,7 +41,7 @@
 
     <main>
       <section class="contents">
-        <h1>Strømforsyning og kabler</h1>
+        <h1>Strøm Forsyning og Kabler</h1>
         <p>
           Her kan du låne strømforsyninger og adaptere til computere, kameraer,
           VR-briller og andet udstyr. Vælg det, du mangler, og sørg for, at dit
@@ -54,6 +54,22 @@
           <a href="">Kabler og adaptere</a>
         </div>
       </section>
+      <!-- Section for dynamically added products -->
+      <section class="category">
+        <div class="cards-container grid_1-1-1"></div>
+      </section>
+
+      <!-- Template for product boxes -->
+      <template id="boxTemplate">
+        <div class="card">
+          <h3 class="box-title"></h3>
+          <img src="" alt="" class="card-image" />
+          <div class="cat-buttons">
+            <div class="card-link green-light"></div>
+            <a href="#" class="arrow-link">→</a>
+          </div>
+        </div>
+      </template>
     </main>
 
     <footer id="om-os">
@@ -95,5 +111,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
   </body>
 </html>

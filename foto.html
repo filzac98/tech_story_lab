@@ -41,7 +41,7 @@
 
     <main>
       <section class="contentf">
-        <h1>Foto, Lyd/Lys & Video</h1>
+        <h1>Foto, Lys, Lyd & Video</h1>
         <p>
           Her kan du låne kameraer til både foto og video samt lyd/lysudstyr og
           tilbehør. Ideelt til fotografering, videoproduktion eller
@@ -55,6 +55,23 @@
           <a href="">Video</a>
         </div>
       </section>
+
+      <!-- Section for dynamically added products -->
+      <section class="category">
+        <div class="cards-container grid_1-1-1"></div>
+      </section>
+
+      <!-- Template for product boxes -->
+      <template id="boxTemplate">
+        <div class="card">
+          <h3 class="box-title"></h3>
+          <img src="" alt="" class="card-image" />
+          <div class="cat-buttons">
+            <div class="card-link green-light"></div>
+            <a href="#" class="arrow-link">→</a>
+          </div>
+        </div>
+      </template>
     </main>
 
     <footer id="om-os">
@@ -96,5 +113,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
   </body>
 </html>

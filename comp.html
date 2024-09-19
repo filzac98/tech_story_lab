@@ -14,7 +14,6 @@
 
   <body>
     <!-- MENY -->
-
     <header>
       <div class="nav-links" id="navLinks">
         <div class="buttonshead">
@@ -29,19 +28,18 @@
       </div>
       <div class="logo">
         <a href="index.html">
-          <img src="img/newlogo.svg" alt="Tech & Story Lab Logo"
-        /></a>
+          <img src="img/newlogo.svg" alt="Tech & Story Lab Logo" />
+        </a>
       </div>
       <div class="search-container">
         <input type="text" placeholder="Hvad vil du leje i dag?" />
         <i class="fas fa-search"></i>
-        <!-- Font Awesome search icon -->
       </div>
     </header>
 
     <main>
       <section class="contentc">
-        <h1>Computere og digitale enheder</h1>
+        <h1>Computere og Enheder</h1>
         <p>
           Her kan du låne computere og tilhørende enheder samt andet udstyr.
           Perfekt til møder, præsentationer eller når du mangler ekstra udstyr.
@@ -49,11 +47,28 @@
           vi er her for at hjælpe DIG!
         </p>
         <div class="button">
-          <a href="">Virtual reality</a>
-          <a href="">Computer og enheder</a>
-          <a href="">Mobile enheder</a>
+          <a href="vr.html">Virtual reality</a>
+          <a href="comp.html">Computere og enheder</a>
+          <a href="mobile.html">Mobile enheder</a>
         </div>
       </section>
+
+      <!-- Section for dynamically added products -->
+      <section class="category">
+        <div class="cards-container grid_1-1-1"></div>
+      </section>
+
+      <!-- Template for product boxes -->
+      <template id="boxTemplate">
+        <div class="card">
+          <h3 class="box-title"></h3>
+          <img src="" alt="" class="card-image" />
+          <div class="cat-buttons">
+            <div class="card-link green-light"></div>
+            <a href="#" class="arrow-link">→</a>
+          </div>
+        </div>
+      </template>
     </main>
 
     <footer id="om-os">
@@ -62,7 +77,7 @@
           <h2>Om Tech & Story Lab</h2>
           <p>
             Tech & Story Lab er et lab med fokus på ny teknologi for KEAs
-            studerende, undervisere og øvrige ansatte. 
+            studerende, undervisere og øvrige ansatte.
           </p>
         </div>
         <div>
@@ -81,7 +96,6 @@
             <h3>Fre</h3>
             <p class="border">9-15</p>
           </div>
-
           <div>
             <h3>Adresse</h3>
             <p class="border">Guldbergsgade 29N, 2200 KBH N</p>
@@ -94,6 +108,8 @@
       </div>
     </footer>
 
+    <!-- Link to the JavaScript file -->
     <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
   </body>
 </html>
